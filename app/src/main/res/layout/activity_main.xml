@@ -51,7 +51,6 @@
             <CalendarView
                 android:id="@+id/calendar"
                 android:layout_width="match_parent"
-                android:layout_margin="10sp"
                 android:layout_height="match_parent"/>
             <TimePicker
                 android:id="@+id/time"
