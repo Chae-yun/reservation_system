@@ -35,5 +35,21 @@ public class MainActivity extends AppCompatActivity {
         textResult=(TextView)findViewById(R.id.text_result);
         timePicker.setVisibility(View.INVISIBLE);
         calView.setVisibility(View.INVISIBLE);
+
+        radioDate.setOnClickListener(new View.OnClickListener() { //익명클래스 하려면 괄호 안에 new + 추상클래스나 인터페이스 이름
+            @Override
+            public void onClick(View v) {
+                calView.setVisibility(View.VISIBLE);
+                timePicker.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        radioTime.setOnClickListener(new View.OnClickListener() { //익명클래스 하려면 괄호 안에 new + 추상클래스나 인터페이스 이름
+            @Override
+            public void onClick(View v) {
+                calView.setVisibility(View.INVISIBLE);
+                timePicker.setVisibility(View.VISIBLE);
+            }
+        });
     }
 }
